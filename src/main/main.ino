@@ -1,10 +1,17 @@
+int val_pot_R;
+// int val_pot_G;
+// int val_pot_B;
+
 void setup() {
-  pinMode(13, OUTPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
-  digitalWrite(13, HIGH);
-  delay(1000);
-  digitalWrite(13, LOW);
-  delay(1000);
+  val_pot_R = analogRead(A0);
+  // val_pot_G = analogRead(A1);
+  // val_pot_B = analogRead(A2);
+  Serial.println(val_pot_R);
+  // Serial.println(val_pot_G);
+  // Serial.println(val_pot_B);
+  delay(100);
 }
