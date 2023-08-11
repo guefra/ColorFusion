@@ -1,17 +1,17 @@
-int val_pot_R;
-// int val_pot_G;
-// int val_pot_B;
+int val_pot_H;
+// int val_pot_S;
+// int val_pot_V;
 
 void setup() {
   Serial.begin(9600);
 }
 
 void loop() {
-  val_pot_R = analogRead(A0);
-  // val_pot_G = analogRead(A1);
-  // val_pot_B = analogRead(A2);
-  Serial.println(val_pot_R);
-  // Serial.println(val_pot_G);
-  // Serial.println(val_pot_B);
+  val_pot_H = analogRead(A0);
+  // val_pot_S = analogRead(A1);
+  // val_pot_V = analogRead(A2);
+  Serial.println(val_pot_H);
+  // Serial.println(val_pot_S);
+  // Serial.println(val_pot_V);
   delay(100);
 }
