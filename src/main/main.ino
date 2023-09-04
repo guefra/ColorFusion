@@ -23,6 +23,7 @@ void loop() {
   readValues();
   convertHSV();
   printNewValues();
+  showColor();
   //printValues();
 }
 
@@ -52,4 +53,10 @@ void printNewValues() {
   Serial.print(s);
   Serial.print(", ");
   Serial.println(v);
+}
+
+void showColor() {
+  uint32_t rgbcolor = strip.ColorHSV(h, s, v);
+  strip.fill(rgbcolor, 0, 71);
+  strip.show();
 }
